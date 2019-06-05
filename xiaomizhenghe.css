@@ -1,0 +1,344 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+li {	/*	所有的li小圆点清除*/
+		list-style: none;
+	}
+a {
+	text-decoration: none;/*所有的A标签下划线清除*/
+	color: #7f7f8a;
+}
+.clearfix:befor , clearfix:after {/*清除浮动*/
+	content: "" ;
+	display: table;
+}
+.clearfix:after {
+	clear: both;
+}
+.clearfix {
+	*zoom:1;
+}
+.yemian {
+	/*height: 4000px;*/
+	/*border:1px solid blue;*/
+	background-color: #f5f5f5;
+}
+.xuanfu {
+	width: 60px;
+	height: 400px;
+	float: right;
+	/*border: 1px solid red;*/
+	position: fixed;
+	top: 150px;
+	left: 1310px;
+}
+.blank {
+	width: 60px;
+	height: 60px;
+	position: relative;
+	background-color: #fff;
+	margin:10px;
+	text-align: center;
+}
+.blank span{
+	font-size: 40px;
+	color: #AAA;
+}
+.blank a {
+	display: block;
+	font-size:10px;
+	color: #7f7f8a
+}
+.blank a:hover {
+	color: orange;
+}
+.head {
+	width: 1210px;
+	height: 100px;
+	margin: auto;
+}
+.head .logo {
+	width: 200px;
+	height: 100px;
+	float: left;
+}
+/*.shangpin1*/ .wenzi {
+	width: 700px;
+	height: 100px;
+	float: left;
+}
+.head-wenzi {
+	margin: auto;
+}
+.head-wenzi a {
+	display: inline-block;
+	height: 50px;
+	margin: 35px 25px;
+}
+.head-wenzi a:hover {
+	color: orange;
+}
+.head .wenzi .shangpin1 {
+	width: 1210px;
+	height: 200px;
+	display: none;
+	/*margin: auto;*/
+	margin-top:-15px;
+	position: absolute;
+	left: 100px;/*要设置上下左右，不要margin*/
+}
+.shangpin1 .head-tu {
+	width: 170px;
+	height: 200px;
+	float: left;
+}
+.head-tu-biao {
+	width: 60px;
+	height: 20px;
+	margin: auto;
+	color: red;
+	text-align: center;/*让文字居中*/
+	background-color: #fff;
+	border: 1px solid red;
+}
+.head-tu img {
+	width: 100px;
+	height: 100px;
+	margin-top: 20px;
+	margin-left: 35px;
+}
+.head-wenzi:hover .shangpin1 {
+		display: block;/*显示隐藏*！！！！！！！！！！！！！！！！！！！1*/
+	}
+.head .wenzi li {
+	float: left;
+}
+.head .search {
+	width: 300px;
+	height: 100px;
+	float: right;
+}
+.head .search .shousuo {
+	width: 240px;
+	height: 50px;
+	float: left;
+	margin-top: 25px;/*让框居中*/
+}
+.head .search .tijiao {
+	width: 50px;
+	height: 50px;
+	float: left;
+	margin-top: 25px;/*让框居中*/
+}
+.container {
+	width: 1210px;
+	height: 600px;
+	margin: auto;
+}
+.container .left {
+	width: 200px;
+	height: 600px;
+	float: left;
+	background-color: #706190;
+}
+.left-wenzi a {
+	width: 198px;
+    height: 50px;
+    display: block;
+    line-height: 50px;
+    text-align: center;
+    margin-top: 45px;
+    color: #fff;
+}
+.left-wenzi a:hover {
+	background-color: red;
+}
+.left-wenzi .shangpin2 {
+	width: 1010px;
+	height: 600px;
+	margin-left: 200px;
+	display: none;
+	position: absolute;
+	/*margin-top: -95px;*/
+	top: 100px;
+	background-color: #e9e4e4b0;
+} 
+.left-wenzi .shangpin2-tu:hover {
+	box-shadow: 10px 10px 10px rgba(0,0,0,0.3)/*设置盒子阴影*/
+}
+.shangpin2-tu{
+	width: 250px;
+	height: 300px;
+	float: left;
+}
+.shangpin2-tu img {
+	width: 240px;
+    height: 290px;
+    margin: 0 0 10px 10px;
+}
+.left-wenzi:hover .shangpin2 {
+	display: block;/*显示隐藏*！！！！！！！！！！！！！！！！！！！1*/
+}
+.container .left li {
+	list-style-type: none;/*去除小圆点*/
+}
+.container .main {
+	width: 1000px;
+	height: 600px;
+	float: left;
+}
+.hengtumi9 {
+	width: 1200px;
+	height: 250px;
+	margin-left: 100px;
+}
+.hengtumi9 img {
+	width: 1200px;
+	height: 150px;
+	margin-top: 50px;
+}
+.yemian2 {
+	width: 1220px;
+	height: 600px;
+	margin-left: 100px
+}
+.heisha {
+	width: 200px;
+	height: 600px;
+	float: left;
+}
+.shangpin3 {
+	width: 1010px;
+	height: 600px;
+	float: left;
+	background-color: #e9e4e4b0;
+}
+.shangpin3-tu {
+	width: 240px;
+	height: 290px;
+	float: left;
+	background-color: #fff;
+	margin: 0 0 10px 10px;
+	position: relative;/*父亲类相对定位*/
+}
+.shangpin3-tu:hover {
+	box-shadow: 10px 10px 10px rgba(0,0,0,0.3)/*设置盒子阴影*/
+}
+.shangpin3-tu .yingcangwenzi {
+	display: none;
+	width: 240px;
+	height: 100px;
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+    line-height: 100px;
+	background-color: orange;
+	position: absolute;/*儿子类绝对定位*/
+	bottom: 0;
+	left: 0;
+}
+.shangpin3-tu:hover .yingcangwenzi {
+	display: block;
+}
+.shangpin3-tu span {
+	width: 60px;
+	height: 20px;
+	display: block;
+	margin-left: 100px;
+	color: #fff;
+	background-color: green;
+	text-align: center;
+}
+.shangpin3-tu img {
+	width: 150px;
+	height: 150px;
+	margin-left: 50px;
+
+}
+.shangpin3-tu h5 {
+	font-weight: none;
+	text-align:center;
+}
+.shangpin3-tu p {
+	margin: 10px;
+	font-size: 12px;
+	text-align: center;
+	color: #b0b0b0;
+}
+.shangpin3-tu a {
+	display: block;
+	margin-top: 15px;
+	font-size: 15px;
+	text-align: center;
+	color: #ff6700;;
+}
+.hengtu618 {
+	width: 1200px;
+	height: 250px;
+	margin-left: 100px;
+}
+.hengtu618 img {
+	width: 1200px;
+	height: 150px;
+	margin-top: 50px;
+}
+.yemian3 {
+	width: 1220px;
+	height: 600px;
+	margin-left: 100px;
+}
+.yemian3-left {
+	width: 200px;
+	height: 600px;
+	float: left;
+	margin-left: 100px；
+}
+.yemian3-left img {
+	width: 200px;
+	height: 300px;
+}
+.yemian3-left .jingshui {
+	width: 200px;
+	height: 300px;
+}
+.yemian3-left .saodi {
+	width: 200px;
+	height: 300px;
+}
+.yemian3-main {
+	width: 1000px;
+	height: 600px;
+	float: left;
+}
+.yemian3-tu {
+	width: 250px;
+	height: 300px;
+	float: left;
+	background-color: #e9e4e4b0;
+	position: relative;/*父亲类相对定位*/
+}
+ .yingcangwenzi {
+	display: none;
+	width: 240px;
+	height: 100px;
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+    line-height: 100px;
+	background-color: orange;
+	position: absolute;/*儿子类绝对定位*/
+	bottom: 0;
+	right: 0;
+}
+.yemian3-tu:hover .yingcangwenzi {
+	display: block;
+}
+.yemian3-tu img {
+	width: 240px;
+	height: 290px;
+	margin:0 0 10px 10px;
+}
+.yemian3-tu img:hover {
+	box-shadow: 10px 10px 10px rgba(0,0,0,0.3)/*设置盒子阴影*/
+}
